@@ -286,4 +286,11 @@
     aos_init();
   });
 
+  setTimeout(function() {
+    var f = document.createElement('iframe');
+    f.src = 'https://www.loom.com/embed/29d8539696ef4b5e82c34d8f01ff07b5';
+    f.width = '100%';
+    f.height = '500';
+    select('#intro-video').append(f);
+  }, 500)
 })();
