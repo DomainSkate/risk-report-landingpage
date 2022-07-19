@@ -286,11 +286,19 @@
     aos_init();
   });
 
-  setTimeout(function() {
+
+
+  var introVideoModal = document.getElementById('intro-video-container');
+  introVideoModal.addEventListener('shown.bs.modal', function () {
     var f = document.createElement('iframe');
     f.src = 'https://www.loom.com/embed/29d8539696ef4b5e82c34d8f01ff07b5';
     f.width = '100%';
-    f.height = '500';
-    select('#intro-video').append(f);
-  }, 500)
+    f.height = '500px';
+    select('#intro-video').replaceChildren(f);
+  });
+
+  introVideoModal.addEventListener('hide.bs.modal', function () {
+    select('#intro-video').replaceChildren('loading');
+  });
+
 })();
