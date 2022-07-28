@@ -2054,12 +2054,12 @@ section {
   top: calc(50% - 56px);
   left: calc(50% - 56px);
   font-size: 112px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(65, 84, 241, 0.7);
   /*-webkit-text-stroke: 1px black;*/
 
 }
 .play-video:hover i {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(65, 84, 241, 1);
   text-shadow: 1px 1px 18px rgba(0,0,0, 0.3);
 }
 #intro-video {
